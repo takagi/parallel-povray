@@ -2,7 +2,7 @@
 
 When rendering results of time varying computer simulation, it is nice to compute the images parallely because there are so many scene files for each time steps.
 
-Parallel-povray script is designed to suit the purpose. It invoke several povray commands paralley (by process). You can specify how many processes to use.
+Parallel-povray script is designed to suit the purpose. It invokes several povray commands parallelly (by process). You can specify how many processes to use.
 
 ## Usage
 
