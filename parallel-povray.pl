@@ -99,11 +99,12 @@ Usage:
 
     parallel-povray -nN [--confirm] [option...] file...
 
-    -nN         How many processes to use. N is an integer number (eg. 2)
+    -nN         How many processes to run. N is an integer number. (eg. 2)
     --confirm   Show interpreted arguments and povray commands that
-                  parallel-povray publishes without running them
-    files       Arguments that end with string ".pov" (eg. *.pov)
-    options     Any other arguments which will be passed to povray unchanged
+                  parallel-povray publishes without running them.
+    files       Povray scene files. Arguments that end with string ".pov" .
+                  (eg. *.pov)
+    options     Any other arguments which will be passed to povray unchanged.
                   (eg. -D +W1920 +H1440)
 END
 }
