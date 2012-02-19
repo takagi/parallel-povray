@@ -8,12 +8,33 @@ Parallel-povray script is designed to suit the purpose. It invokes several povra
 
     parallel-povray -nN [--confirm] [option...] file...
 
-      -nN         How many processes to use. N is an integer number (eg. 2)
+      -nN         How many processes to use. N is an integer number. (eg. 2)
       --confirm   Show interpreted arguments and povray commands that
-                    parallel-povray publishes without running them
-      files       Arguments that end with string ".pov" (eg. *.pov)
-      options     Any other arguments which will be passed to povray unchanged
+                    parallel-povray publishes without running them.
+      files       Arguments that end with string ".pov" . (eg. *.pov)
+      options     Any other arguments which will be passed to povray unchanged.
                     (eg. -D +W1920 +H1440)
+
+## Installation
+
+   * Install povray (http://www.povray.org/) if not installed yet.
+   * Please put parallel-povray.pl any place you want.
+   * Parallel-povray assumes that the environment variable to run povray without specifing its place is set. To confirm this, "which povray" on terminal.
+
+## Example
+
+    $ which povray
+    /path/to/povray
+    $ cd parallel-povray
+    $ ls
+    README.markdown         result00000000.pov      result00000002.pov
+    parallel-povray.pl      result00000001.pov      result00000003.pov
+    $ ./parallel-povray.pl -n2 -D +W1920 +H1440 *.pov
+    $ ls
+    README.markdown         result00000001.png      result00000003.png
+    parallel-povray.pl      result00000001.pov      result00000003.pov
+    result00000000.png      result00000002.png
+    result00000000.pov      result00000002.pov
 
 ## Requirement
 
