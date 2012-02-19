@@ -36,18 +36,6 @@ Parallel-povray script is designed to suit the purpose. It invokes several povra
     parallel-povray.pl      result00000001.pov      result00000003.pov
     result00000000.png      result00000002.png
     result00000000.pov      result00000002.pov
-    $
-    $ parallel-povray -n2 -D *.pov --confirm
-    Number  : 2
-    Options : -D --confirm
-    Files   :
-    result00000000.pov
-    result00000001.pov
-    result00000002.pov
-    result00000003.pov
-    Commands:
-    for x in result00000000.pov result00000002.pov; do povray -D --confirm $x; done
-    for x in result00000001.pov result00000003.pov; do povray -D --confirm $x; done
 
 ## Requirement
 
